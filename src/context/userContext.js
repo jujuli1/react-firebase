@@ -18,8 +18,21 @@ export function UserContextProvider(props){
     const [currentUser, setCurrentUser] = useState();
     const [loadingData, setLoadingData] = useState(true);
 
-    const signUp = (email, pwd) => createUserWithEmailAndPassword(auth, email, pwd)
+    const signUp = (email, pwd) => createUserWithEmailAndPassword(auth, email, pwd);
 
+    const signIn = (email, pwd) => signInWithEmailAndPassword(auth, email, pwd)
+
+
+   // fonction "se désabonné"
+    useEffect(() => {
+        //observe les changement lié a firebase
+        const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+            setCurrentUser(currentUser)
+            setLoadingData(false)
+        })
+        //permet de se désabonné
+        return unsubscribe;
+    }, [])
 
     //modale
     const [modalState, setModalState] = useState(
@@ -31,30 +44,30 @@ export function UserContextProvider(props){
         if(modal === "signIn"){
             setModalState({
                 SignUpModal: false,
-                signInModal: true,
+                SignInModal: true,
             })
         }
 
         if(modal === "signUp"){
             setModalState({
                 SignUpModal: true,
-                signInModal: false,
+                SignInModal: false,
             })
         }
 
         if(modal === "close"){
             setModalState({
                 SignUpModal: false,
-                signInModal: false,
+                SignInModal: false,
             })
         }
     }
 
 
     return (
-        <UserContext.Provider value =  {{modalState, toggleModals, signUp}}>
+        <UserContext.Provider value =  {{modalState, toggleModals, signUp, currentUser, signIn}}>
 
-            {props.children}
+            {!loadingData && props.children}
         </UserContext.Provider>
     )
 }
