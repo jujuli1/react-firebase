@@ -29,7 +29,7 @@ const Navbar = () => {
     return (
         <div>
             <nav className='navbar navbar-light bg-light px-4'>
-            <Link to="/" className='nabbar-brand'>AuthJS</Link>
+            
 
             <div>
                 <button 

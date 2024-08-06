@@ -6,6 +6,8 @@ import SignUpModal from "./components/SignUpModal";
 import SignInModal from "./components/SignInModal"
 import Private from './pages/Private/Private'
 import PrivateHome from './pages/Private/PrivateHome/PrivateHome'
+import Coordonnees from "./components/Coordonnee";
+import Competences from "./components/Competences";
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
     <Routes>
 
       <Route path="/*" element={<Home/>}/>
+      <Route path="/coordonnee" element={<Coordonnees />} />
+        <Route path="/competences" element={<Competences />} />
       <Route path="/private" element={<Private/>}>
       
       <Route path="/private/private-home" element={<PrivateHome/>}/>

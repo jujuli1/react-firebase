@@ -76,11 +76,11 @@ const SignUpModal = () => {
                 <div className='position-absolute top-50 start-50 translate-middle' style={{minWidth:"400px"}}>
 
 
-                <div className='modal-dialog bg-white w-100'>
-                    <div className='modal-content'>
+                <div className='modal-dialog bg-white w-100 rounded'>
+                    <div className='modal-content p-4'>
                         <div className='modal-header'>
-                            <h5 className='modal-title'>Sign up</h5>
-                            <button onClick={closeModal} className='btn-close'></button>
+                            <h5 className='modal-title pb-5'>Sign up</h5>
+                            <button onClick={closeModal} className='btn-close ms-auto'></button>
                         </div>
 
                         <div className='modal-body'>
