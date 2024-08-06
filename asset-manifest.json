@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-firebase/static/css/main.3af1e150.css",
-    "main.js": "/react-firebase/static/js/main.e1098eef.js",
+    "main.css": "/react-firebase/static/css/main.68d46470.css",
+    "main.js": "/react-firebase/static/js/main.ad1b8fa6.js",
     "static/js/453.47cc0af4.chunk.js": "/react-firebase/static/js/453.47cc0af4.chunk.js",
     "static/media/cafe.webp": "/react-firebase/static/media/cafe.fed3ff5147a5be372959.webp",
     "index.html": "/react-firebase/index.html",
-    "main.3af1e150.css.map": "/react-firebase/static/css/main.3af1e150.css.map",
-    "main.e1098eef.js.map": "/react-firebase/static/js/main.e1098eef.js.map",
+    "main.68d46470.css.map": "/react-firebase/static/css/main.68d46470.css.map",
+    "main.ad1b8fa6.js.map": "/react-firebase/static/js/main.ad1b8fa6.js.map",
     "453.47cc0af4.chunk.js.map": "/react-firebase/static/js/453.47cc0af4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3af1e150.css",
-    "static/js/main.e1098eef.js"
+    "static/css/main.68d46470.css",
+    "static/js/main.ad1b8fa6.js"
   ]
 }
