@@ -91,7 +91,7 @@ const PrivateHome = () => {
             marginTop: '3px',
           }}
         /></Link>
-            <img src={gif} alt='cafe bebe yoda' class="rounded-pill ms-5 " style={{ position: 'relative' }}/>
+            <img src={gif} alt='cafe bebe yoda' class="rounded-pill ms-5 " style={{ position: 'relative', border: '2px solid grey' }}/>
             <button className='github' onClick={moveElement}>Mon github</button>
             </div>
             
