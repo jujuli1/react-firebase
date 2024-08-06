@@ -1,5 +1,5 @@
 .custom-line-height {
-    line-height: 2.9; /* Ajustez cette valeur pour changer l'espacement */
+    line-height: 2.9; 
 }
 
 .signature {
@@ -43,5 +43,30 @@
   }
 
   .rounded-left-custom {
-    border-radius: 0.50rem 0 0 0.50rem; /* Ajustez la valeur selon votre besoin */
+    border-radius: 0.50rem 0 0 0.50rem; 
   }
+
+  .btn-transition {
+    position: absolute;
+    margin-left: 255px;
+    margin-top: 137px;
+    transition: margin-left 0.3s ease; 
+  }
+  
+  .btn-transition:hover {
+    margin-left: 360px;
+  }
+
+  .moving-element {
+    position: absolute;
+    width: 30px;
+    height: 69px;
+    border-radius: 50%;
+    transition: transform 1s ease;
+   
+  }
+
+  .github{
+    margin-left: 76px;
+  }
+  
