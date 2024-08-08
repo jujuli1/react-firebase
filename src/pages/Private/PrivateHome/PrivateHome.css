@@ -67,7 +67,11 @@
   }
 
   .github{
-    margin-left: 76px;
+
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    margin-left: 203px;
   }
   .presentation {
     height: 400px;
