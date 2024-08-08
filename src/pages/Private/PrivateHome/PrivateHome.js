@@ -105,7 +105,7 @@ const PrivateHome = () => {
         {/**lien github */}
         </Link>
             <img src={gif} alt='cafe bebe yoda' class="rounded-pill ms-5 " style={{ position: 'relative', border: '2px solid grey', boxShadow: '0px 4px 8px rgba(0, 0, 255, 0.5)' }}/>
-            <button className='github' onClick={moveElement}>Mon github</button>
+            <button className='github' onClick={moveElement}></button>
             </div>
 
             {/**texte de presentation */}

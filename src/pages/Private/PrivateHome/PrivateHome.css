@@ -74,7 +74,7 @@
     overflow-y: scroll;
     
     scrollbar-width: auto;
-    scrollbar-color: rgba(0, 0, 255, 0.5) darkslategray;
+    scrollbar-color: rgba(0, 0, 255, 0.5) transparent;
 }
  
 
