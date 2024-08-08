@@ -48,7 +48,7 @@
 
   .btn-transition {
     position: absolute;
-    margin-left: 255px;
+    margin-left: 279px;
     margin-top: 137px;
     transition: margin-left 0.3s ease; 
   }
@@ -69,4 +69,15 @@
   .github{
     margin-left: 76px;
   }
-  
+  .presentation {
+    height: 400px;
+    overflow-y: scroll;
+    
+    scrollbar-width: auto;
+    scrollbar-color: rgba(0, 0, 255, 0.5) #f1f1f1;
+}
+ 
+
+
+
+
