@@ -73,7 +73,7 @@
     height: 400px;
     overflow-y: scroll;
     
-    scrollbar-width: auto;
+    scrollbar-width: thin;
     scrollbar-color: rgba(0, 0, 255, 0.5) transparent;
 }
  
