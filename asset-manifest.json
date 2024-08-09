@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/react-firebase/static/css/main.d9e461bf.css",
-    "main.js": "/react-firebase/static/js/main.298a805a.js",
+    "main.css": "/react-firebase/static/css/main.fa3d8e5d.css",
+    "main.js": "/react-firebase/static/js/main.e08891fd.js",
     "static/js/453.47cc0af4.chunk.js": "/react-firebase/static/js/453.47cc0af4.chunk.js",
-    "static/media/giphy.webp": "/react-firebase/static/media/giphy.2312874cdc1abbc2a75d.webp",
     "static/media/cafe.webp": "/react-firebase/static/media/cafe.fed3ff5147a5be372959.webp",
+    "static/media/Sql.png": "/react-firebase/static/media/Sql.85fb38d6773862e917f4.png",
+    "static/media/JavaScript.png": "/react-firebase/static/media/JavaScript.266bd9fb2663dcc057b4.png",
     "index.html": "/react-firebase/index.html",
-    "main.d9e461bf.css.map": "/react-firebase/static/css/main.d9e461bf.css.map",
-    "main.298a805a.js.map": "/react-firebase/static/js/main.298a805a.js.map",
+    "static/media/react.svg": "/react-firebase/static/media/react.638b460cfd7b8709a2ba536e4fc72861.svg",
+    "main.fa3d8e5d.css.map": "/react-firebase/static/css/main.fa3d8e5d.css.map",
+    "main.e08891fd.js.map": "/react-firebase/static/js/main.e08891fd.js.map",
     "453.47cc0af4.chunk.js.map": "/react-firebase/static/js/453.47cc0af4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9e461bf.css",
-    "static/js/main.298a805a.js"
+    "static/css/main.fa3d8e5d.css",
+    "static/js/main.e08891fd.js"
   ]
 }
