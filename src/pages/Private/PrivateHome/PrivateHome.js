@@ -90,7 +90,7 @@ const PrivateHome = () => {
             */} 
 
     {/**lien coordonées */}
-           <Link to="/coordonnee" className='btn btn-primary rounded-right-custom btn-transition' style={{ boxShadow: '0px 0px 8px rgba(255, 0, 0, 1)' }}>Me joindre</Link>
+           <Link to="/coordonnee" className='btn btn-primary rounded-right-custom btn-transition clignotement' style={{ boxShadow: '0px 0px 8px rgba(255, 0, 0, 1)' }}>Me joindre</Link>
             
             
             
@@ -150,7 +150,7 @@ const PrivateHome = () => {
                 left: '-50px',
                 right: '-50px', 
                 width: 'calc(100% + 100px)', 
-                height: '980px', 
+                height: '678px', 
                 zIndex: -1, 
                 backgroundColor: '#333', 
                 padding: '10px',

@@ -42,6 +42,28 @@
     }
   }
 
+  @keyframes clignotement {
+    0% {
+        opacity: 1;
+        background-color: rgb(5, 5, 107);
+        box-shadow: 0px 0px 10px 5px rgb(129, 3, 3);
+    }
+    50% {
+        opacity: 0.5;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    100% {
+        opacity: 1;
+        background-color: rgb(5, 5, 107);
+        box-shadow: 0px 0px 10px 5px rgb(129, 3, 3);
+    }
+}
+
+.clignotement {
+    animation: clignotement 2.5s infinite; /* 1s pour la durée de l'animation, infinite pour la répétition */
+}
+
   .rounded-left-custom {
     border-radius: 0.50rem 0 0 0.50rem; 
   }
@@ -72,6 +94,7 @@
     height: 25px;
     border-radius: 10px;
     margin-left: 203px;
+    animation: clignotement 2.5s infinite;
   }
   .presentation {
     height: 400px;
