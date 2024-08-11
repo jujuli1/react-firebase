@@ -49,7 +49,7 @@ form .input-box {
 form button{
     width: 100%;
     height: 55px;
-    background-color: #1900ff;
+    background-color: #1900ffbe;
     border: none;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0 ,0, .1);
@@ -61,7 +61,7 @@ form button{
     transition: .5px;
 }
 form button:hover {
-    background: #624ec6;
+    background: #1900fffa;
 }
 
 .futuristic {
@@ -75,5 +75,4 @@ form button:hover {
     padding: 5px 10px; 
     
 }
-
 
