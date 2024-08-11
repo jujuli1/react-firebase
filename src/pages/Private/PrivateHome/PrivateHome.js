@@ -90,7 +90,7 @@ const PrivateHome = () => {
             */} 
 
     {/**lien coordonées */}
-           <Link to="/coordonnee" className='btn btn-primary rounded-right-custom btn-transition clignotement' style={{ boxShadow: '0px 0px 8px rgba(255, 0, 0, 1)' }}>Me joindre</Link>
+           <Link to="/private/private-home/contact" className='btn btn-primary rounded-right-custom btn-transition clignotement' style={{ boxShadow: '0px 0px 8px rgba(255, 0, 0, 1)' }}>Me joindre</Link>
             
             
             

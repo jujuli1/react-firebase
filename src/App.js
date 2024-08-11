@@ -8,6 +8,7 @@ import Private from './pages/Private/Private'
 import PrivateHome from './pages/Private/PrivateHome/PrivateHome'
 import Coordonnees from "./components/Coordonnee";
 import Competences from "./components/Competences";
+import Contact from "./components/Contact/Contact";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Route path="/*" element={<Home/>}/>
       <Route path="/coordonnee" element={<Coordonnees />} />
         <Route path="/competences" element={<Competences />} />
+        <Route path="/private/private-home/contact" element={<Contact />} />
       <Route path="/private" element={<Private/>}>
       
       <Route path="/private/private-home" element={<PrivateHome/>}/>
