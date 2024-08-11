@@ -1,5 +1,6 @@
 import React from 'react';
-import './Contact.css'
+import './Contact.css';
+import Swal from 'sweetalert2'
 
 const Contact = () => {
 
@@ -22,7 +23,11 @@ const Contact = () => {
         }).then((res) => res.json());
     
         if (res.success) {
-          console.log("Success", res);
+            Swal.fire({
+                title: "",
+                text: "Message envoyé",
+                icon: "success"
+              });
         }
       };
 
