@@ -4,11 +4,13 @@ import gif from './cafe.webp'
 import './PrivateHome.css'
 import Competences from '../../../components/Competences';
 import Presentation from '../../../components/Presentation';
-
+import Contact from '../../../components/Contact/Contact';
+import Modal from '../../../components/Modale';
 const PrivateHome = () => {
 
     const [position, setPosition] = useState(0);
     const [moving, setMoving] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
     
 
   const moveElement = () => {
@@ -22,6 +24,14 @@ const PrivateHome = () => {
         setPosition(270);
       }
       setMoving(!moving);
+  };
+
+  const handleModalOpen = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
   };
 
     const [animated, setAnimated] = useState(false);
@@ -90,8 +100,13 @@ const PrivateHome = () => {
             */} 
 
     {/**lien coordonées */}
-           <Link to="/private/private-home/contact" className='btn btn-primary rounded-right-custom btn-transition clignotement' style={{ boxShadow: '0px 0px 8px rgba(255, 0, 0, 1)' }}>Me joindre</Link>
-            
+    <button
+          className='btn btn-primary rounded-right-custom btn-transition clignotement'
+          style={{ boxShadow: '0px 0px 8px rgba(255, 0, 0, 1)' }}
+          onClick={handleModalOpen}
+        >
+          Me joindre
+        </button>            
             
             
             
@@ -161,7 +176,11 @@ const PrivateHome = () => {
             }}>
                 <Competences />
             </div>
-        
+        {/* Affichage de la modale */}
+      <Modal show={isModalOpen} onClose={handleModalClose}>
+        <Contact />
+      </Modal>
+
              
         </div>
     );

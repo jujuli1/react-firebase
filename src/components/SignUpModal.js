@@ -87,7 +87,7 @@ const SignUpModal = () => {
                             <form 
                             ref={formRef}
                             onSubmit={handleForm}
-                            className='sign-up-form'>
+                            className='sign-up-form' style={{marginLeft: "2px"}} >
                                 <div className='mb-3'>
                                     <label htmlFor='signUpEmail'className='form-label'>Email adress</label>
                                     <input ref={addInputs} name='email' required type='email' className='form-control' id='signUpEmail'/>

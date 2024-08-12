@@ -67,7 +67,7 @@ const SignUpModal = () => {
                             <button onClick={closeModal} className='btn-close ms-auto'></button>
                         </div>
 
-                        <div className='modal-body'>
+                        <div className='modal-body' style={{right:"23px"}}>
                             <form 
                             ref={formRef}
                             onSubmit={handleForm}
