@@ -37,25 +37,16 @@ const PrivateHome = () => {
     const [animated, setAnimated] = useState(false);
     const transformStyle = `translate(100px, 100px) rotate(${position}deg) translate(-100px, -100px)`;
     return (
+
+      
         <div className='container p-5' style={{ display: 'flex', flexDirection: 'row-reverse' }}>
 
+            
 
-            {/** div de decoration crocher */}
+
+              {/** div de decoration crocher */}
             <div style={{ marginLeft: '585px', marginTop: '50px' }}>
-               {/*<div
-                style={{
-                    backgroundColor: 'dark',
-                    width: '113px',
-                    height: '55px',
-                    position: 'absolute',
-                    marginTop: '134px',
-                    marginLeft: '85px',
-                    borderTop: '8px solid grey',
-                    borderBottom: '8px solid grey',
-                    borderRadius: '10px',
-                    
-                }}
-                    ></div> */} 
+               
                     <div
                 style={{
                     backgroundColor: 'dark',
@@ -72,43 +63,27 @@ const PrivateHome = () => {
                     ></div>
 
                     {/**lien Me joindre */}
-           {/**
-            *<Link
-      to="/coordonnee"
-      className='btn btn-primary rounded-left-custom'
-      style={{
-        boxShadow: '0px 4px 8px rgba(0, 0, 0, 1)',
-        borderRadius: '5px',
-        marginTop: '-3px',
-        marginLeft: '-44px',
-        transform: animated ? 'translateX(0)' : 'translateX(135%)', 
-        transition: 'transform 0.3s ease', 
-        zIndex: 2, 
-      }}
-      onMouseEnter={() => {
-        if (!animated) {
-          setAnimated(true); 
-        }
-      }}
-      onMouseLeave={(e) => {
-         e.currentTarget.style.transform = 'translateX(50%)';
-      }}
-    >
-      Me joindre
-    </Link> 
-            * 
-            */} 
-
-    {/**lien coordonées */}
+           
     <button
           className='btn btn-primary rounded-right-custom btn-transition clignotement'
           style={{ boxShadow: '0px 0px 8px rgba(255, 0, 0, 1)' }}
           onClick={handleModalOpen}
         >
           Me joindre
-        </button>            
+        </button>    
+
+        {/* Affichage de la modale */}
+      <Modal show={isModalOpen} onClose={handleModalClose}>
+        <Contact />
+      </Modal>        
             
-            
+            <div className='arrow'>
+
+              <span></span>
+              <span></span>
+            </div>
+      
+      
             
             
             {/**lien github + linkedin */}
@@ -155,8 +130,12 @@ const PrivateHome = () => {
             {/**Composant présentation */}
             <Presentation/>
             
+            
+            
 
+            
           
+
 
             {/* composant compétences */}
             <div style={{
@@ -176,10 +155,10 @@ const PrivateHome = () => {
             }}>
                 <Competences />
             </div>
-        {/* Affichage de la modale */}
-      <Modal show={isModalOpen} onClose={handleModalClose}>
-        <Contact />
-      </Modal>
+          
+
+            
+        
 
              
         </div>

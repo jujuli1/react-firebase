@@ -27,28 +27,28 @@ const Navbar = () => {
     }
 
     return (
-        <div>
-            <nav className='navbar navbar-light bg-light px-4'>
+        <div style={{ gap: '100px' }}>
+            <nav className='navbar navbar-light bg-light px-4' >
             
 
             <div>
-                <button 
+                {/**<button 
                 onClick={()=> toggleModals("signUp")}
                 className='btn btn-primary'>
                     Sign up
 
-                </button>
+                </button> */}
                 <button 
                 
                 onClick={()=> toggleModals("signIn")}
-                className='btn btn-primary ms-2'>
+                className='btn btn-primary ms-2' style={{ boxShadow: '5px 4px 15px rgba(22, 11, 119, 1)', marginRight:"40px" }}>
                     Sign in
 
                 </button>
                 <button 
-                
+               
                 onClick={logOut}
-                className='btn btn-danger ms-2'>
+                className='btn btn-danger ms-2' style={{ boxShadow: '5px 4px 15px rgba(129, 3, 3, 1)' }}>
                 Log out
 
                 </button>
