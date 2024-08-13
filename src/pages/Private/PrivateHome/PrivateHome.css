@@ -148,6 +148,78 @@ span:nth-of-type(2) {
 }
  
 
+.banner{
+  width: 100%;
+  height: 70vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  top: 50px;
+}
+
+.banner .slider {
+  position: absolute;
+  width: 200px;
+  height: 15%;
+  top: 22%;
+  left: calc(50% - 100px); /* espace entre les image et le centre */
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: autoRun 25s linear infinite;
+  z-index: 2;
+}
+
+@keyframes autoRun {
+  from {                           /* angle de vue*/
+    transform: perspective(1000px) rotateX(-10deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(-10deg) rotateY(360deg);
+  }
+}
+
+.banner .slider .item {
+  position: absolute;
+  inset: 0 0 0 0;
+  --quantity: 4; /* Définit la quantité d'items, dans ce cas 3 */
+  transform: 
+      rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+      translateZ(550px);
+}
+      
+
+.banner .slider .item img {
+  width: auto;
+  height: 80%;
+  object-fit: contain;
+}
+
+.banner .content{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1400px, 100vw);
+  height: max-content;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner .content .model{
+  background-image: url(planete.webp);
+  width: 100%;
+  height: 75vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-size: auto 25%;
+  background-repeat: no-repeat;
+  background-position:  center;
+}
+
 
 
 

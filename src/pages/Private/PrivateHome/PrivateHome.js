@@ -6,6 +6,7 @@ import Competences from '../../../components/Competences';
 import Presentation from '../../../components/Presentation';
 import Contact from '../../../components/Contact/Contact';
 import Modal from '../../../components/Modale';
+import Space from './Space.webp'
 const PrivateHome = () => {
 
     const [position, setPosition] = useState(0);
@@ -146,12 +147,16 @@ const PrivateHome = () => {
                 width: 'calc(100% + 100px)', 
                 height: '678px', 
                 zIndex: -1, 
-                backgroundColor: '#333', 
+               
                 padding: '10px',
                 top: '965px',
                 textAlign: 'center',
                 overflowY: 'scroll', 
-                boxShadow: '0px 0px 10px rgba(0, 0, 255, 0.5)' 
+                boxShadow: '0px 0px 10px rgba(0, 0, 255, 0.5)',
+                backgroundImage: `url(${Space})`, 
+                backgroundSize: 'cover',
+                backgroundPosition: 'center', 
+                backgroundRepeat: 'no-repeat'
             }}>
                 <Competences />
             </div>
