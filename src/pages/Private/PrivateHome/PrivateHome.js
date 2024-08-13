@@ -138,28 +138,39 @@ const PrivateHome = () => {
           
 
 
-            {/* composant compétences */}
-            <div style={{
-                position: 'absolute',
-                bottom: '-50px', 
-                left: '-50px',
-                right: '-50px', 
-                width: 'calc(100% + 100px)', 
-                height: '678px', 
-                zIndex: -1, 
-               
-                padding: '10px',
-                top: '965px',
-                textAlign: 'center',
-                overflowY: 'scroll', 
-                boxShadow: '0px 0px 10px rgba(0, 0, 255, 0.5)',
-                backgroundImage: `url(${Space})`, 
-                backgroundSize: 'cover',
-                backgroundPosition: 'center', 
-                backgroundRepeat: 'no-repeat'
-            }}>
-                <Competences />
-            </div>
+            {/* Composant compétences */}
+<div style={{
+    position: 'absolute',
+    bottom: '-50px', 
+    left: '-50px',
+    right: '-50px', 
+    width: 'calc(100% + 100px)', 
+    height: '778px', 
+    zIndex: -1, 
+    padding: '10px',
+    top: '965px',
+    textAlign: 'center',
+    overflowY: 'scroll', 
+    boxShadow: '0px 0px 10px rgba(0, 0, 255, 0.5)',
+    
+}}>
+    <div style={{
+        content: '""',
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        backgroundImage: `url(${Space})`, 
+        backgroundSize: 'cover',
+        backgroundPosition: 'center', 
+        backgroundRepeat: 'no-repeat',
+        opacity: 0.3,  // Opacité appliquée au fond
+        zIndex: -1,  // Place le pseudo-élément derrière le contenu
+    }}></div>
+    
+    <Competences />
+</div>
           
 
             

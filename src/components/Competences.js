@@ -4,9 +4,20 @@ import jsLogo from '../pages/Private/PrivateHome/JavaScript.png';
 import sqlLogo from '../pages/Private/PrivateHome/Sql.png'
 import reactLogo from '../pages/Private/PrivateHome/react.svg'
 import TP from '../pages/Private/PrivateHome/tp.jpg'
+import { useState } from 'react';
 
 
 const Competences = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleImageClick = () => {
+        setIsModalOpen(true);
+    };
+
+    const handleCloseModal = () => {
+        setIsModalOpen(false);
+    };
 
     const logoStyle = {
         width: '100px',
@@ -61,7 +72,11 @@ const Competences = () => {
                 <div className='item' style={{ "--position": 1 }}><img src={jsLogo} alt='javascript-logo'/></div>
                 <div className='item' style={{ "--position": 2 }}><img src={sqlLogo} alt='sql-logo'/></div>
                 <div className='item' style={{ "--position": 3 }}><img src={reactLogo} alt='react-logo'/></div>
-                <div className='item' style={{ "--position": 4 }}><img src={TP} alt='titre pro'/></div>
+
+                <div className='item' style={{"--position": 4 }}><img src={TP} alt='titre pro' onClick={handleImageClick} style={{ cursor: 'pointer' }} /></div>
+                
+
+                
 
                     
                     </div>
@@ -72,6 +87,44 @@ const Competences = () => {
                 </h1>
                 <div className='model'></div>
             </div>
+
+            {/* Modale pour afficher l'image en grand */}
+            {isModalOpen && (
+                <div style={{
+                    position: 'fixed',
+                    top: '50px',
+                    left: 0,
+                    width: '100vw',
+                    height: '100vh',
+                    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    zIndex: 1000,
+                    rotate: "270deg",
+
+                }}>
+                    <div style={{
+                        position: 'relative',
+                        backgroundColor: '#fff',
+                        padding: '20px',
+                        borderRadius: '10px',
+                    }}>
+                        <img src={TP} alt='titre pro' style={{ maxWidth: '90vw', maxHeight: '90vh' }} />
+                        <button onClick={handleCloseModal} style={{
+                            position: 'absolute',
+                            bottom: '10px',
+                            right: '10px',
+                            backgroundColor: 'transparent',
+                            color: 'black',
+                            fontSize: '24px',
+                            border: 'none',
+                            cursor: 'pointer',
+                            rotate: "90deg"
+                        }}>X</button>
+                    </div>
+                </div>
+            )}
 
             </div>
             

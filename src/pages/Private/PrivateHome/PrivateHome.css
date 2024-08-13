@@ -104,7 +104,7 @@ span:nth-of-type(2) {
 }
 
 .clignotement {
-    animation: clignotement 2.5s infinite; /* 1s pour la durée de l'animation, infinite pour la répétition */
+    animation: clignotement 2.5s infinite; 
 }
 
   .rounded-left-custom {
@@ -181,7 +181,7 @@ span:nth-of-type(2) {
 .banner .slider .item {
   position: absolute;
   inset: 0 0 0 0;
-  --quantity: 4; /* Définit la quantité d'items, dans ce cas 3 */
+  --quantity: 4; /* Définit la quantité d'items, dans ce cas 4 */
   transform: 
       rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
       translateZ(550px);
