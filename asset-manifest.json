@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/react-firebase/static/css/main.163ca12b.css",
-    "main.js": "/react-firebase/static/js/main.ea48b14c.js",
+    "main.css": "/react-firebase/static/css/main.be6efcc0.css",
+    "main.js": "/react-firebase/static/js/main.b0504798.js",
     "static/js/453.47cc0af4.chunk.js": "/react-firebase/static/js/453.47cc0af4.chunk.js",
     "static/media/cafe.webp": "/react-firebase/static/media/cafe.fed3ff5147a5be372959.webp",
+    "static/media/tp.jpg": "/react-firebase/static/media/tp.23e5271691c79553870e.jpg",
     "static/media/Sql.png": "/react-firebase/static/media/Sql.85fb38d6773862e917f4.png",
+    "static/media/planete.webp": "/react-firebase/static/media/planete.f20d4e0e64b6b9ca06e8.webp",
+    "static/media/Space.webp": "/react-firebase/static/media/Space.41dbbea88655836747bd.webp",
     "static/media/JavaScript.png": "/react-firebase/static/media/JavaScript.266bd9fb2663dcc057b4.png",
     "index.html": "/react-firebase/index.html",
     "static/media/react.svg": "/react-firebase/static/media/react.638b460cfd7b8709a2ba536e4fc72861.svg",
-    "main.163ca12b.css.map": "/react-firebase/static/css/main.163ca12b.css.map",
-    "main.ea48b14c.js.map": "/react-firebase/static/js/main.ea48b14c.js.map",
+    "main.be6efcc0.css.map": "/react-firebase/static/css/main.be6efcc0.css.map",
+    "main.b0504798.js.map": "/react-firebase/static/js/main.b0504798.js.map",
     "453.47cc0af4.chunk.js.map": "/react-firebase/static/js/453.47cc0af4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.163ca12b.css",
-    "static/js/main.ea48b14c.js"
+    "static/css/main.be6efcc0.css",
+    "static/js/main.b0504798.js"
   ]
 }
