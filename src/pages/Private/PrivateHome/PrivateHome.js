@@ -145,7 +145,7 @@ const PrivateHome = () => {
     left: '-50px',
     right: '-50px', 
     width: 'calc(100% + 100px)', 
-    height: '778px', 
+    height: '1010px', 
     zIndex: -1, 
     padding: '10px',
     top: '965px',

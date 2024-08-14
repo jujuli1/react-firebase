@@ -69,11 +69,13 @@ const Competences = () => {
             <div className='banner'>
 
                 <div className='slider'>
-                <div className='item' style={{ "--position": 1 }}><img src={jsLogo} alt='javascript-logo'/></div>
-                <div className='item' style={{ "--position": 2 }}><img src={sqlLogo} alt='sql-logo'/></div>
+                <div className='item' style={{ "--position": 1, color: "rgba(22, 11, 119, 1)", fontSize: "70px", textShadow: "2px 2px 15px rgba(22, 11, 119, 1)" }}>JS</div>
+                <div className='item' style={{ "--position": 6, color: "rgba(22, 11, 119, 1)", fontSize: "70px", textShadow: "2px 2px 15px rgba(22, 11, 119, 1)" }}>Python</div>
+                <div className='item' style={{ "--position": 2, color: "rgba(22, 11, 119, 1)", fontSize: "70px", textShadow: "2px 2px 15px rgba(22, 11, 119, 1)"  }}>SQL</div>
                 <div className='item' style={{ "--position": 3 }}><img src={reactLogo} alt='react-logo'/></div>
+                <div className='item' style={{ "--position": 5, color: "rgba(22, 11, 119, 1)", fontSize: "70px", textShadow: "2px 2px 15px rgba(22, 11, 119, 1)" }}>FireBase</div>
 
-                <div className='item' style={{"--position": 4 }}><img src={TP} alt='titre pro' onClick={handleImageClick} style={{ cursor: 'pointer' }} /></div>
+                <div className='item' style={{"--position": 4 }}><img src={TP} alt='titre pro' onClick={handleImageClick} style={{ cursor: 'pointer', boxShadow: "2px 2px 15px rgba(22, 11, 119, 1)" }} /></div>
                 
 
                 
@@ -96,7 +98,7 @@ const Competences = () => {
                     left: 0,
                     width: '100vw',
                     height: '100vh',
-                    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                    
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
@@ -109,6 +111,7 @@ const Competences = () => {
                         backgroundColor: '#fff',
                         padding: '20px',
                         borderRadius: '10px',
+                        boxShadow: "2px 2px 15px rgba(22, 11, 119, 1)",
                     }}>
                         <img src={TP} alt='titre pro' style={{ maxWidth: '90vw', maxHeight: '90vh' }} />
                         <button onClick={handleCloseModal} style={{
@@ -116,11 +119,13 @@ const Competences = () => {
                             bottom: '10px',
                             right: '10px',
                             backgroundColor: 'transparent',
+                            boxShadow: "2px 2px 15px rgba(22, 11, 119, 1)",
                             color: 'black',
-                            fontSize: '24px',
+                            fontSize: '17px',
                             border: 'none',
                             cursor: 'pointer',
-                            rotate: "90deg"
+                            rotate: "90deg",
+                            borderRadius:"20px"
                         }}>X</button>
                     </div>
                 </div>
